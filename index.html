@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+
+        <!-- Game Mode Selection -->
+        <div id="gameModeSelection" class="options active">
+            <h2>Select Mode</h2>
+            <button id="soloMode">Solo</button>
+            <button id="coopMode">Coop</button>
+        </div>
+
+        <!-- Player Symbol Selection -->
+        <div id="symbolSelection" class="options">
+            <h2>Choose Your Symbol</h2>
+            <button id="chooseX">X</button>
+            <button id="chooseO">O</button>
+        </div>
+
+        <!-- AI Difficulty Selection -->
+        <div id="difficultySelection" class="options">
+            <h2>Select Difficulty</h2>
+            <button id="noob">Noob</button>
+            <button id="meh">Meh!</button>
+            <button id="champion">Champion!!</button>
+        </div>
+
+        <!-- Game Board -->
+        <div id="gameContainer">
+            <div class="board" id="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            <div class="info">
+                <h2 id="message">Player X's Turn</h2>
+                <button id="restartButton">Restart Game</button>
+                <button id="resetButton">Reset</button> <!-- New Reset Button -->
+            </div>
+        </div>
+        <p>Designed by Cosmo!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

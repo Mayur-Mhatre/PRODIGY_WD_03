@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Main Title */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Options and Game Container */
+.options, #gameContainer {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.options.active, #gameContainer.active {
+    display: block;
+}
+
+.options button, #gameModeSelection button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover, #gameModeSelection button:hover {
+    background-color: #444;
+}
+
+/* Board Styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #e3e3e3;
+}
+
+/* Info Section Styling */
+.info {
+    margin-top: 20px;
+}
+
+#message {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restartButton:hover {
+    background-color: #444;
+}
+
+/* Visibility Controls */
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* Add this to style the reset button */
+#resetButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Adds some space between the buttons */
+}
+
+#resetButton:hover {
+    background-color: #444;
+}
+
+/* The rest of the CSS remains the same */
