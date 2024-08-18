@@ -48,7 +48,7 @@ To get the Tic-Tac-Toe game up and running on your local machine, follow these s
 
 ## 🎨 Screenshots
 
-![Tic-Tac-Toe Game](assets/ticktactoe_screenshot.png)  
+![Tic-Tac-Toe Game](img/ticktactoe_screenshot.png)  
 *Example of the Tic-Tac-Toe game interface.*
 
 ## 📝 License
